@@ -10,13 +10,15 @@ func main() {
 		"green": "#4bf745",
 		"white": "#fff657",
 	}
-	//delete(colors, "red")
+	colors["yellow"] = "#lowenfn"
+	delete(colors, "red")
+	delete(colors, "yellow")
 	emre(colors)
-	//fmt.Println(colors)
+
 }
 
 func emre(c map[string]string) {
 	for color, hex := range c {
-		fmt.Println("Hex code for", color, "is", hex)
+		fmt.Println("Hex code for color", color, "is", hex)
 	}
 }
